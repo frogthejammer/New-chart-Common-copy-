@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Synced Hover Charts</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="charts-configs.js"></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <h1>Synced Hover Charts</h1>
+
+  <div id="controls">
+    <label for="view-select">View:</label>
+    <select id="view-select">
+      <option value="grid">Grid</option>
+      <option value="big">Big Chart</option>
+    </select>
+  </div>
+
+  <div class="chart-container" id="chart-grid">
+    <canvas id="chart1" width="300" height="200"></canvas>
+    <canvas id="chart2" width="300" height="200"></canvas>
+    <canvas id="chart3" width="300" height="200"></canvas>
+    <canvas id="chart4" width="300" height="200"></canvas>
+  </div>
+
+  <div id="big-chart-container" style="display: none;">
+    <canvas id="bigChart" width="800" height="400"></canvas>
+  </div>
+
+  <div id="hover-info">Hover over a point</div>
+</body>
+</html>
