@@ -56,6 +56,9 @@ function makeChart(id, data, color) {
 
         legend: { display: false }
       },
+      scales: {
+        y: { beginAtZero: true, grid: { color: '#26294a', display: true,  }, ticks:{maxTicksLimit: 3} },
+        x: { grid: { display: false } }},
       interaction: {
         mode: 'index',
         intersect: false
@@ -159,6 +162,9 @@ function makeBigChart() {
         },
         legend: { display: false }
       },
+      scales: {
+        y: { beginAtZero: true, grid: { color: '#26294a', display: true,  }, ticks:{maxTicksLimit: 3} },
+        x: { grid: { display: false } }},
       interaction: {
         mode: 'index',
         intersect: false
